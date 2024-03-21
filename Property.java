@@ -1,5 +1,4 @@
 
-
 /**
  * A property to sell.
  *
@@ -17,24 +16,26 @@ public class Property {
      * Constructor of class Property
      *
      * @param description The property description.
-     * @param price The property price.
+     * @param price       The property price.
      */
     public Property(String description, double price) {
-
+        this.description = description;
+        this.price = price;
+        this.id = -1;
     }
 
     /**
      * Id selector.
      */
     public int getId() {
-        
+        return -1;
     }
 
     /**
      * Description selector.
      */
     public String getDescription() {
-
+        return null;
     }
 
     /**
@@ -50,9 +51,9 @@ public class Property {
      * Price selector.
      */
     public double getPrice() {
-        
+        return -1;
     }
-    
+
     /**
      * Price modifier.
      * 
@@ -64,5 +65,6 @@ public class Property {
 
     @Override
     public String toString() {
+        return null;
     }
 }
