@@ -37,7 +37,6 @@ public class CompanyTest {
         company.registerSeller(seller2);
 
         property1 = new Property("T3 Monte Belo", 150000.0);
-        sell1 = new Sell(client1, seller1, property1);
 
         company.registerProperty(property1);
 
