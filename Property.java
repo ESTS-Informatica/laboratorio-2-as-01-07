@@ -28,14 +28,14 @@ public class Property {
      * Id selector.
      */
     public int getId() {
-        return -1;
+        return id;
     }
 
     /**
      * Description selector.
      */
     public String getDescription() {
-        return null;
+        return description;
     }
 
     /**
@@ -44,14 +44,14 @@ public class Property {
      * @param description The new description. Must not be null.
      */
     public void setDescription(String description) {
-
+        this.description = description;
     }
 
     /**
      * Price selector.
      */
     public double getPrice() {
-        return -1;
+        return price;
     }
 
     /**
@@ -60,11 +60,13 @@ public class Property {
      * @param price The new price. Must not be negative.
      */
     public void setPrice(double price) {
-
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return null;
+        String str = "Descrição : " + description;
+        str += "\nPreço     : " + price;
+        return str;
     }
 }
